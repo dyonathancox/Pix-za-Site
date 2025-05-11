@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pix-za - Organize suas Finanças</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/lottie-web@5.7.13/build/player/lottie.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <h1>Pix-za</h1>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Abrir menu">☰</button>
+      <nav aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#funcionalidades">Funcionalidades</a></li>
+          <li><a href="#precing">Preços</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#login" class="btn-login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Seção Início -->
+    <section id="home" class="hero-section" data-aos="fade-up">
+      <div class="hero-container">
+        <div class="hero-text" data-aos="fade-right">
+          <h1>Transforme suas Finanças com o Pix-za</h1>
+          <p>
+            Uma solução moderna e intuitiva para quem quer controlar gastos,
+            visualizar resultados e tomar decisões com confiança.
+          </p>
+          <button type="submit" class="btn-suporte">
+            <a href="#precing">
+              <span>Veja nossos planos</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z"
+                />
+              </svg>
+            </a>
+          </button>
+        </div>
+        <div class="hero-image">
+          <div id="lottie-hero" style="width: 100%; height: 450px"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="sobre" data-aos="fade-up">
+      <div class="container-about">
+        <div class="sobre-content flex">
+          <!-- Texto com animação da direita -->
+          <div class="text" data-aos="fade-right" data-aos-duration="800">
+            <h2>Sobre o Pix-za</h2>
+            <p>
+              O <strong>Pix-za</strong> nasceu com um único objetivo:
+              <strong>simplificar o controle financeiro</strong> para você, seja
+              no âmbito pessoal ou empresarial.
+            </p>
+            <p>
+              Sabemos que muitas pessoas e pequenos negócios enfrentam
+              dificuldades na hora de organizar suas finanças. Isso ocorre por
+              vários motivos: <strong>planilhas complicadas</strong>,
+              <strong>aplicativos difíceis de usar</strong> ou até a falta de
+              uma ferramenta realmente eficiente para
+              <strong>gerenciar gastos</strong> e
+              <strong>tomar decisões inteligentes</strong>.
+            </p>
+            <p>
+              Criamos uma plataforma <strong>acessível</strong>,
+              <strong>intuitiva</strong> e <strong>poderosa</strong>. Queremos
+              que qualquer pessoa — <strong>com</strong> ou
+              <strong>sem</strong> conhecimento em finanças — consiga
+              <strong>registrar transações</strong>,
+              <strong>visualizar relatórios</strong> e
+              <strong>tomar decisões mais assertivas</strong> com base nos
+              dados.
+            </p>
+            <p>
+              O <strong>Pix-za</strong> não é apenas um sistema. Ele é a solução
+              para
+              <strong>quem quer estar no controle da sua vida financeira</strong
+              >. Mais do que uma ferramenta, o <strong>Pix-za</strong> é sua
+              <strong>ponte para a liberdade financeira</strong>.
+            </p>
+          </div>
+
+          <div class="side-by-side">
+            <!-- Lista de valores com animação em cascata -->
+            <ul class="valores">
+              <li
+                data-aos="fade-left"
+                data-aos-delay="100"
+                data-aos-duration="700"
+              >
+                <strong>Foco no Usuário:</strong> Uma experiência
+                <strong>intuitiva</strong> e <strong>fluida</strong>, feita para
+                que qualquer pessoa consiga usar sem dificuldades.
+              </li>
+              <li
+                data-aos="fade-left"
+                data-aos-delay="200"
+                data-aos-duration="700"
+              >
+                <strong>Acessibilidade:</strong>
+                <strong>Planos acessíveis</strong> para todos os perfis e
+                necessidades financeiras.
+              </li>
+              <li
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="700"
+              >
+                <strong>Transparência:</strong> Você tem o
+                <strong>controle total dos seus dados</strong> e decisões
+                financeiras.
+              </li>
+              <li
+                data-aos="fade-left"
+                data-aos-delay="400"
+                data-aos-duration="700"
+              >
+                <strong>Inovação:</strong> A tecnologia trabalha a seu favor,
+                simplificando a <strong>organização financeira</strong>.
+              </li>
+            </ul>
+
+            <!-- Animação do Lottie com efeito de zoom -->
+            <div
+              class="image"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              data-aos-duration="800"
+            >
+              <div id="lottie-sobre" style="width: 100%; height: 450px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Funcionalidades -->
+    <section id="funcionalidades" class="funcionalidades">
+      <h2>Controle Total das Suas Finanças</h2>
+      <p>
+        Com o <strong>Pix-za,</strong> você tem à disposição um conjunto de
+        ferramentas criadas para transformar a maneira como você gerencia suas
+        finanças. Desde o controle preciso de transações até relatórios
+        detalhados, cada funcionalidade é pensada para oferecer uma visão clara
+        e precisa dos seus números, de forma simples e acessível.
+      </p>
+      <div class="feature-grid">
+        <div class="feature-card" data-aos="zoom-in">
+          <div class="feature-inner">
+            <div class="icon">🔄</div>
+            <h3>Gerenciamento de Transações</h3>
+            <p>
+              Registre e acompanhe receitas, despesas e investimentos com
+              clareza e praticidade.
+            </p>
+          </div>
+        </div>
+        <div class="feature-card" data-aos="zoom-in">
+          <div class="feature-inner">
+            <div class="icon">📊</div>
+            <h3>Relatórios Interativos</h3>
+            <p>
+              Dashboards visuais para você entender seus hábitos financeiros com
+              rapidez.
+            </p>
+          </div>
+        </div>
+        <div class="feature-card" data-aos="zoom-in">
+          <div class="feature-inner">
+            <div class="icon">📁</div>
+            <h3>Exportação de Dados</h3>
+            <p>
+              Baixe relatórios em PDF ou Excel para análise e histórico
+              completo.
+            </p>
+          </div>
+        </div>
+        <div class="feature-card" data-aos="zoom-in">
+          <div class="feature-inner">
+            <div class="icon">🔐</div>
+            <h3>Segurança de Dados</h3>
+            <p>
+              Suas informações protegidas com criptografia e backup automático.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de preços-->
+    <section id="precing" class="pricing-section">
+      <h2>Preços/Planos</h2>
+      <div class="pricing-container">
+        <!-- Plano Básico -->
+        <div class="pricing-card basic">
+          <div
+            class="pricing-card-header"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h3>Básico</h3>
+            <div class="price">R$ 12,90</div>
+            <div class="price-period">por mês</div>
+          </div>
+          <div
+            class="pricing-card-content"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="pricing-features">
+              <h4>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Inclui:
+              </h4>
+              <ul>
+                <li>Controle de receitas e despesas</li>
+                <li>Gráficos financeiros básicos</li>
+                <li>Relatórios mensais simplificados</li>
+                <li>Exportação em Excel/PDF</li>
+              </ul>
+            </div>
+            <button class="pricing-btn">Começar agora</button>
+          </div>
+        </div>
+
+        <!-- Plano Plus -->
+        <div class="pricing-card plus">
+          <div
+            class="pricing-card-header"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="pricing-badge">Mais Popular</div>
+            <h3>Plus</h3>
+            <div class="price">R$ 27,90</div>
+            <div class="price-period">por mês</div>
+          </div>
+          <div
+            class="pricing-card-content"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="pricing-features">
+              <h4>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Tudo do Básico, mais:
+              </h4>
+
+              <h4>Página de Faturamento</h4>
+              <ul>
+                <li>Relatórios detalhados mensais/anuais</li>
+                <li>Gráficos avançados de evolução</li>
+                <li>Comparação entre períodos anuais/mensais</li>
+              </ul>
+
+              <h4>Recursos Adicionais</h4>
+              <ul>
+                <li>Exportação em PDF e Excel</li>
+                <li>Categorização avançada</li>
+                <li>Backup automatizado</li>
+              </ul>
+            </div>
+            <button class="pricing-btn">Assinar Plus</button>
+          </div>
+        </div>
+
+        <!-- Plano Trimestral Plus -->
+        <div class="pricing-card quarterly">
+          <div
+            class="pricing-card-header"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="pricing-badge">Economia</div>
+            <h3>Trimestral Plus</h3>
+            <div class="price">R$ 69,90</div>
+            <div class="price-period">a cada 3 meses</div>
+            <div class="economy-badge">Equivale a R$ 23,30/mês</div>
+          </div>
+          <div
+            class="pricing-card-content"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="pricing-features">
+              <h4>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Tudo do Plus, com:
+              </h4>
+              <ul>
+                <li><strong>Economia de 16,5%</strong> em relação ao mensal</li>
+                <li>Pagamento trimestral único</li>
+                <li>Relatórios trimestrais consolidados</li>
+                <li>Prioridade no suporte</li>
+                <li>Acesso a novos recursos primeiro</li>
+              </ul>
+
+              <p class="savings-tag">Economize R$ 13,80 a cada trimestre!</p>
+            </div>
+            <button class="pricing-btn">Assinar Trimestral</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Contato Atualizada -->
+    <section id="contato" class="contato-suporte">
+      <div class="container-form">
+        <div class="form-header">
+          <h2>Precisa de Ajuda?</h2>
+          <p>
+            Nosso time de suporte está pronto para te ajudar com qualquer dúvida
+            ou questão sobre o Pix-za.
+          </p>
+        </div>
+
+        <form class="suporte-form" data-aos="flip-up">
+          <div class="form-group">
+            <label for="nome">Seu Nome</label>
+            <input
+              type="text"
+              id="nome"
+              placeholder="Como podemos te chamar?"
+              required
+            />
+            <div class="input-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Seu E-mail</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Para onde responderemos?"
+              required
+            />
+            <div class="input-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
+                />
+                <path
+                  d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" required>
+              <option value="" disabled selected>
+                Selecione o tipo de ajuda
+              </option>
+              <option value="problema">Reportar um problema</option>
+              <option value="duvida">Tirar uma dúvida</option>
+              <option value="sugestao">Dar uma sugestão</option>
+              <option value="outro">Outro assunto</option>
+            </select>
+            <div class="input-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.097 1.515a.75.75 0 0 1 .589.882L10.666 7.5h4.47l1.079-5.397a.75.75 0 1 1 1.47.294L16.665 7.5h3.585a.75.75 0 0 1 0 1.5h-3.885l-1.2 6h3.585a.75.75 0 0 1 0 1.5h-3.885l-1.08 5.397a.75.75 0 1 1-1.47-.294l1.02-5.103h-4.47l-1.08 5.397a.75.75 0 0 1-1.47-.294l1.02-5.103H3.75a.75.75 0 1 1 0-1.5h3.885l1.2-6H5.25a.75.75 0 0 1 0-1.5h3.885l1.08-5.397a.75.75 0 0 1 .882-.588ZM10.365 9l-1.2 6h4.47l1.2-6h-4.47Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Sua Mensagem</label>
+            <textarea
+              id="mensagem"
+              placeholder="Descreva detalhadamente como podemos te ajudar..."
+              required
+            ></textarea>
+            <div class="input-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2.25c-2.429 0-4.817.178-7.152.521C2.87 3.061 1.5 4.795 1.5 6.741v6.018c0 1.946 1.37 3.68 3.348 3.97.877.129 1.761.234 2.652.316V21a.75.75 0 0 0 1.28.53l4.184-4.183a.39.39 0 0 1 .266-.112c2.006-.05 3.982-.22 5.922-.506 1.978-.29 3.348-2.023 3.348-3.97V6.741c0-1.947-1.37-3.68-3.348-3.97A49.145 49.145 0 0 0 12 2.25ZM8.25 8.625a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Zm2.625 1.125a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-suporte">
+              <span>Enviar Mensagem</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <div class="suporte-info" data-aos="flip-up">
+          <div class="info-card">
+            <div class="info-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3>Suporte Rápido</h3>
+            <p>
+              Nosso tempo médio de resposta é de <strong>2 horas úteis</strong>.
+            </p>
+          </div>
+
+          <div class="info-card" data-aos="flip-up">
+            <div class="info-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3>Guia Completo</h3>
+            <p>
+              Explore nossos <a href="#">artigos e tutoriais</a> para aprender
+              mais sobre como utilizar nossa plataforma.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer data-aos="fade-in">
+      <p>
+        &copy; 2025 Pix-za | Do forno para web. Reservamos os direitos e o
+        último pedaço.
+      </p>
+
+      <p>
+        Desenvolvido por
+        <a
+          href="https://github.com/dyonathancox"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Dyonathan Cox
+        </a>
+      </p>
+    </footer>
+
+    <script>
+      // Animação para a Hero Section
+      lottie.loadAnimation({
+        container: document.getElementById("lottie-hero"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "assets/animation.json",
+      });
+
+      // Animação para a Seção Sobre
+      lottie.loadAnimation({
+        container: document.getElementById("lottie-sobre"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "assets/about.json",
+      });
+    </script>
+
+    <script>
+      // Menu mobile
+      const menuBtn = document.querySelector(".mobile-menu-btn");
+      const navList = document.querySelector(".nav-list");
+
+      menuBtn.addEventListener("click", () => {
+        navList.classList.toggle("active");
+      });
+
+      // Fecha o menu quando um item é clicado
+      document.querySelectorAll(".nav-list a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navList.classList.remove("active");
+        });
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // duração da animação em ms
+        once: true, // anima apenas uma vez ao rolar
+      });
+    </script>
+  </body>
+</html>
