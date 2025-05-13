@@ -222,7 +222,7 @@
 
         <div class="demonstracao-content">
           <!-- Vídeo demonstrativo -->
-          <div class="video-demonstracao">
+          <div class="video-demonstracao" data-aos="fade-left" data-aos-delay="100" data-aos-duration="700">
             <iframe src="https://www.youtube.com/embed/ID_DO_VIDEO" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
@@ -609,98 +609,8 @@
       </p>
     </footer>
 
-    <script>
-      // Animação para a Hero Section
-      lottie.loadAnimation({
-        container: document.getElementById("lottie-hero"),
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        path: "assets/animation.json",
-      });
-
-      // Animação para a Seção Sobre
-      lottie.loadAnimation({
-        container: document.getElementById("lottie-sobre"),
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        path: "assets/about.json",
-      });
-    </script>
-
-    <script>
-      // Menu mobile
-      const menuBtn = document.querySelector(".mobile-menu-btn");
-      const navList = document.querySelector(".nav-list");
-
-      menuBtn.addEventListener("click", () => {
-        navList.classList.toggle("active");
-      });
-
-      // Fecha o menu quando um item é clicado
-      document.querySelectorAll(".nav-list a").forEach((link) => {
-        link.addEventListener("click", () => {
-          navList.classList.remove("active");
-        });
-      });
-    </script>
-
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000, // duração da animação em ms
-        once: true, // anima apenas uma vez ao rolar
-      });
-    </script>
-
-<script>
-  function openLightbox(imageSrc, captionText) {
-    const modal = document.getElementById('lightboxModal');
-    const modalImg = document.getElementById('lightboxImage');
-    const caption = document.getElementById('lightboxCaption');
-    
-    modal.style.display = "flex";
-    modalImg.src = imageSrc;
-    caption.innerHTML = captionText;
-    
-    // Fechar ao clicar fora da imagem
-    modal.onclick = function(e) {
-      if (e.target === modal) {
-        closeLightbox();
-      }
-    };
-    
-    // Fechar com ESC
-    document.addEventListener('keydown', function(e) {
-      if (e.key === "Escape") {
-        closeLightbox();
-      }
-    });
-  }
-
-  function closeLightbox() {
-    document.getElementById('lightboxModal').style.display = "none";
-  }
-</script>
-
-<script>
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    
-    const targetId = this.getAttribute('href');
-    if (targetId === '#') return;
-    
-    const targetElement = document.querySelector(targetId);
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 80, // Ajuste para o header
-        behavior: 'smooth'
-      });
-    }
-  });
-});
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

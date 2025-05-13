@@ -253,6 +253,7 @@ header .logo h1 {
   height: auto;
   padding: 8rem 0;
   background-color: #fafafa;
+  overflow: hidden;
 }
 
 .feature-grid {
@@ -269,8 +270,6 @@ header .logo h1 {
   text-align: center;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s ease;
-  cursor: pointer;
-  overflow: hidden; /* garante que a animação não ultrapasse a borda */
 }
 
 .feature-inner {
@@ -337,7 +336,7 @@ header .logo h1 {
   background-color: #f4f8fb;
   text-align: center;
   height: auto;
-
+  overflow: hidden;
 }
 
 .container {
@@ -513,6 +512,7 @@ header .logo h1 {
 
 /* Cards de Preços */
 .pricing-section {
+  overflow: hidden;
   width: 100%;
   height: auto;
   background: #f8f9fc;
@@ -716,6 +716,7 @@ header .logo h1 {
   background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
   padding: 5rem 0;
   font-family: "Mulish", sans-serif;
+  overflow: hidden;
 }
 .container-form {
   height: auto;
