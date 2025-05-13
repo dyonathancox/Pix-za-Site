@@ -28,8 +28,8 @@
           <li><a href="#home">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#funcionalidades">Funcionalidades</a></li>
+          <li><a href="#demonstracao">Demonstração</a></li>
           <li><a href="#precing">Preços</a></li>
-          <li><a href="#blog">Blog</a></li>
           <li><a href="#contato">Contato</a></li>
           <li><a href="#login" class="btn-login">Login</a></li>
         </ul>
@@ -212,6 +212,67 @@
         </div>
       </div>
     </section>
+
+
+    <!-- Seção Demonstração -->
+<section id="demonstracao" class="demonstracao-section">
+  <div class="container">
+    <h2 class="section-title">Veja Como Funciona</h2>
+    <p class="section-description">Descubra como nosso sistema pode transformar sua experiência. Abaixo você pode ver uma demonstração em vídeo e algumas imagens do funcionamento do sistema.</p>
+
+    <div class="demonstracao-content">
+      <!-- Vídeo demonstrativo -->
+      <div class="video-demonstracao">
+        <iframe src="https://www.youtube.com/embed/ID_DO_VIDEO" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <!-- Imagens ou Capturas de Tela -->
+      <div class="screenshots-demonstracao">
+        <div class="screenshot-item">
+          <div class="screenshot-frame" onclick="openLightbox('assets/img/preenchido.png', 'Dashboard principal, simples e intuitivo')">
+            <img src="assets/img/preenchido.png" alt="Tela 1 do sistema">
+          </div>
+          <p class="screenshot-caption">Dashboard principal (light mode), simples e intuitivo.</p>
+        </div>
+        <div class="screenshot-item">
+          <div class="screenshot-frame" onclick="openLightbox('assets/img/dark-mode.png', 'Dashboard principal (dark mode')">
+            <img src="assets/img/dark-mode.png" alt="Tela 1 do sistema">
+          </div>
+          <p class="screenshot-caption">Dashboard principal (dark mode).</p>
+        </div>
+        
+        <div class="screenshot-item">
+          <div class="screenshot-frame" onclick="openLightbox('assets/img/modal.png', 'Interface de controle das transações no cartão de crédito')">
+            <img src="assets/img/modal.png" alt="Tela 2 do sistema">
+          </div>
+          <p class="screenshot-caption">Interface de controle das transações no cartão de crédito.</p>
+        </div>
+        <div class="screenshot-item">
+          <div class="screenshot-frame" onclick="openLightbox('assets/img/distribuição.png', 'Interface de comparação entre contas fixas e variáveis')">
+            <img src="assets/img/distribuição.png" alt="Tela 3 do sistema">
+          </div>
+          <p class="screenshot-caption">Interface de comparação entre contas fixas e variáveis.</p>
+        </div>
+        <div class="screenshot-item">
+          <div class="screenshot-frame" onclick="openLightbox('assets/img/edit-transactions.png', 'Interface de edição das transações')">
+            <img src="assets/img/edit-transactions.png" alt="Tela 3 do sistema">
+          </div>
+          <p class="screenshot-caption">Interface de edição das transações.</p>
+        </div>
+        
+      </div>
+      
+      <!-- Lightbox Modal - Adicione isso no final da seção -->
+      <div id="lightboxModal" class="lightbox-modal">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+          <img id="lightboxImage" src="" alt="Imagem expandida">
+          <div id="lightboxCaption" class="lightbox-caption"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>   
 
     <!-- Seção de preços-->
     <section id="precing" class="pricing-section">
@@ -528,7 +589,9 @@
     </section>
 
     <!-- Footer -->
-    <footer data-aos="fade-in">
+    <footer data-aos="fade-up">
+      <div class="footer-logo">
+        <h1>Pix-za</h1>
       <p>
         &copy; 2025 Pix-za | Do forno para web. Reservamos os direitos e o
         último pedaço.
@@ -590,5 +653,54 @@
         once: true, // anima apenas uma vez ao rolar
       });
     </script>
+
+<script>
+  function openLightbox(imageSrc, captionText) {
+    const modal = document.getElementById('lightboxModal');
+    const modalImg = document.getElementById('lightboxImage');
+    const caption = document.getElementById('lightboxCaption');
+    
+    modal.style.display = "flex";
+    modalImg.src = imageSrc;
+    caption.innerHTML = captionText;
+    
+    // Fechar ao clicar fora da imagem
+    modal.onclick = function(e) {
+      if (e.target === modal) {
+        closeLightbox();
+      }
+    };
+    
+    // Fechar com ESC
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        closeLightbox();
+      }
+    });
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightboxModal').style.display = "none";
+  }
+</script>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    const targetId = this.getAttribute('href');
+    if (targetId === '#') return;
+    
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 80, // Ajuste para o header
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+</script>
   </body>
 </html>
