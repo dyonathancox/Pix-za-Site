@@ -215,64 +215,64 @@
 
 
     <!-- Seção Demonstração -->
-<section id="demonstracao" class="demonstracao-section">
-  <div class="container">
-    <h2 class="section-title">Veja Como Funciona</h2>
-    <p class="section-description">Descubra como nosso sistema pode transformar sua experiência. Abaixo você pode ver uma demonstração em vídeo e algumas imagens do funcionamento do sistema.</p>
+    <section id="demonstracao" class="demonstracao-section">
+      <div class="container">
+        <h2 class="section-title">Veja Como Funciona</h2>
+        <p class="section-description">Descubra como nosso sistema pode transformar sua experiência. Abaixo você pode ver uma demonstração em vídeo e algumas imagens do funcionamento do sistema.</p>
 
-    <div class="demonstracao-content">
-      <!-- Vídeo demonstrativo -->
-      <div class="video-demonstracao">
-        <iframe src="https://www.youtube.com/embed/ID_DO_VIDEO" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+        <div class="demonstracao-content">
+          <!-- Vídeo demonstrativo -->
+          <div class="video-demonstracao">
+            <iframe src="https://www.youtube.com/embed/ID_DO_VIDEO" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
 
-      <!-- Imagens ou Capturas de Tela -->
-      <div class="screenshots-demonstracao">
-        <div class="screenshot-item">
-          <div class="screenshot-frame" onclick="openLightbox('assets/img/preenchido.png', 'Dashboard principal, simples e intuitivo')">
-            <img src="assets/img/preenchido.png" alt="Tela 1 do sistema">
+          <!-- Imagens ou Capturas de Tela -->
+          <div class="screenshots-demonstracao">
+            <div class="screenshot-item" data-aos="fade-left" data-aos-delay="100" data-aos-duration="700">
+              <div class="screenshot-frame" onclick="openLightbox('assets/img/preenchido.png', 'Dashboard principal, simples e intuitivo')">
+                <img src="assets/img/preenchido.png" alt="Tela 1 do sistema">
+              </div>
+              <p class="screenshot-caption">Dashboard principal (light mode), simples e intuitivo.</p>
+            </div>
+            <div class="screenshot-item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="700">
+              <div class="screenshot-frame" onclick="openLightbox('assets/img/dark-mode.png', 'Dashboard principal (dark mode')">
+                <img src="assets/img/dark-mode.png" alt="Tela 1 do sistema">
+              </div>
+              <p class="screenshot-caption">Dashboard principal (dark mode).</p>
+            </div>
+            
+            <div class="screenshot-item" data-aos="fade-left" data-aos-delay="300" data-aos-duration="700">
+              <div class="screenshot-frame" onclick="openLightbox('assets/img/modal.png', 'Interface de controle das transações no cartão de crédito')">
+                <img src="assets/img/modal.png" alt="Tela 2 do sistema">
+              </div>
+              <p class="screenshot-caption">Interface de controle das transações no cartão de crédito.</p>
+            </div>
+            <div class="screenshot-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700">
+              <div class="screenshot-frame" onclick="openLightbox('assets/img/distribuição.png', 'Interface de comparação entre contas fixas e variáveis')">
+                <img src="assets/img/distribuição.png" alt="Tela 3 do sistema">
+              </div>
+              <p class="screenshot-caption">Interface de comparação entre contas fixas e variáveis.</p>
+            </div>
+            <div class="screenshot-item" data-aos="fade-left" data-aos-delay="500" data-aos-duration="700">
+              <div class="screenshot-frame" onclick="openLightbox('assets/img/edit-transactions.png', 'Interface de edição das transações')">
+                <img src="assets/img/edit-transactions.png" alt="Tela 3 do sistema">
+              </div>
+              <p class="screenshot-caption">Interface de edição das transações.</p>
+            </div>
+            
           </div>
-          <p class="screenshot-caption">Dashboard principal (light mode), simples e intuitivo.</p>
-        </div>
-        <div class="screenshot-item">
-          <div class="screenshot-frame" onclick="openLightbox('assets/img/dark-mode.png', 'Dashboard principal (dark mode')">
-            <img src="assets/img/dark-mode.png" alt="Tela 1 do sistema">
+          
+          <!-- Lightbox Modal - Adicione isso no final da seção -->
+          <div id="lightboxModal" class="lightbox-modal">
+            <span class="close-btn" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox-content">
+              <img id="lightboxImage" src="" alt="Imagem expandida">
+              <div id="lightboxCaption" class="lightbox-caption"></div>
+            </div>
           </div>
-          <p class="screenshot-caption">Dashboard principal (dark mode).</p>
         </div>
-        
-        <div class="screenshot-item">
-          <div class="screenshot-frame" onclick="openLightbox('assets/img/modal.png', 'Interface de controle das transações no cartão de crédito')">
-            <img src="assets/img/modal.png" alt="Tela 2 do sistema">
-          </div>
-          <p class="screenshot-caption">Interface de controle das transações no cartão de crédito.</p>
-        </div>
-        <div class="screenshot-item">
-          <div class="screenshot-frame" onclick="openLightbox('assets/img/distribuição.png', 'Interface de comparação entre contas fixas e variáveis')">
-            <img src="assets/img/distribuição.png" alt="Tela 3 do sistema">
-          </div>
-          <p class="screenshot-caption">Interface de comparação entre contas fixas e variáveis.</p>
-        </div>
-        <div class="screenshot-item">
-          <div class="screenshot-frame" onclick="openLightbox('assets/img/edit-transactions.png', 'Interface de edição das transações')">
-            <img src="assets/img/edit-transactions.png" alt="Tela 3 do sistema">
-          </div>
-          <p class="screenshot-caption">Interface de edição das transações.</p>
-        </div>
-        
       </div>
-      
-      <!-- Lightbox Modal - Adicione isso no final da seção -->
-      <div id="lightboxModal" class="lightbox-modal">
-        <span class="close-btn" onclick="closeLightbox()">&times;</span>
-        <div class="lightbox-content">
-          <img id="lightboxImage" src="" alt="Imagem expandida">
-          <div id="lightboxCaption" class="lightbox-caption"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>   
+    </section>   
 
     <!-- Seção de preços-->
     <section id="precing" class="pricing-section">
