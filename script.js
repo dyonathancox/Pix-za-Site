@@ -109,3 +109,28 @@ function closeLightbox() {
     modal.style.display = "none";
   }
 }
+
+const form = document.getElementById("suporteForm");
+
+form.addEventListener("submit", async (event) => {
+  event.preventDefault(); // previne o envio padrão (redirecionamento)
+
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      headers: { Accept: "application/json" },
+      body: formData,
+    });
+
+    if (response.ok) {
+      alert("Obrigado! Sua mensagem foi enviada com sucesso.");
+      form.reset(); // limpa o formulário
+    } else {
+      alert("Oops! Algo deu errado. Tente novamente.");
+    }
+  } catch (error) {
+    alert("Erro de conexão. Tente novamente mais tarde.");
+  }
+});

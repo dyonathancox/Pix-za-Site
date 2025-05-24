@@ -20,7 +20,7 @@
     <!-- Header -->
     <header>
       <div class="logo">
-        <h1>Pix-za</h1>
+        <img src="assets/logo.png" alt="">
       </div>
       <button class="mobile-menu-btn" aria-label="Abrir menu">☰</button>
       <nav aria-label="Menu principal">
@@ -31,6 +31,7 @@
           <li><a href="#demonstracao">Demonstração</a></li>
           <li><a href="#precing">Preços</a></li>
           <li><a href="#contato">Contato</a></li>
+          <li><a href="#login" class="btn-login">Cadastre-se</a></li>
           <li><a href="#login" class="btn-login">Login</a></li>
         </ul>
       </nav>
@@ -223,7 +224,9 @@
         <div class="demonstracao-content">
           <!-- Vídeo demonstrativo -->
           <div class="video-demonstracao" data-aos="fade-left" data-aos-delay="100" data-aos-duration="700">
-            <iframe src="https://www.youtube.com/embed/ID_DO_VIDEO" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <video controls style="width: 100%; height: auto;">
+              <source src="./assets/PixZa.mp4" type="video/mp4">
+            </video>
           </div>
 
           <!-- Imagens ou Capturas de Tela -->
@@ -426,31 +429,23 @@
         <div class="form-header">
           <h2>Precisa de Ajuda?</h2>
           <p>
-            Nosso time de suporte está pronto para te ajudar com qualquer dúvida
-            ou questão sobre o Pix-za.
+            Nosso time de suporte está pronto para te ajudar com qualquer dúvida ou questão sobre o Pix-za.<br>
           </p>
         </div>
 
-        <form class="suporte-form" data-aos="flip-up">
+        <form class="suporte-form" data-aos="flip-up" id="suporteForm" action="https://formspree.io/f/manognlk" method="POST">
           <div class="form-group">
             <label for="nome">Seu Nome</label>
             <input
               type="text"
               id="nome"
+              name="nome"
               placeholder="Como podemos te chamar?"
               required
             />
             <div class="input-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
-                  clip-rule="evenodd"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
               </svg>
             </div>
           </div>
@@ -460,28 +455,21 @@
             <input
               type="email"
               id="email"
+              name="email"
               placeholder="Para onde responderemos?"
               required
             />
             <div class="input-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
-                />
-                <path
-                  d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
               </svg>
             </div>
           </div>
 
           <div class="form-group">
             <label for="assunto">Assunto</label>
-            <select id="assunto" required>
+            <select id="assunto" name="assunto" required>
               <option value="" disabled selected>
                 Selecione o tipo de ajuda
               </option>
@@ -491,16 +479,8 @@
               <option value="outro">Outro assunto</option>
             </select>
             <div class="input-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M11.097 1.515a.75.75 0 0 1 .589.882L10.666 7.5h4.47l1.079-5.397a.75.75 0 1 1 1.47.294L16.665 7.5h3.585a.75.75 0 0 1 0 1.5h-3.885l-1.2 6h3.585a.75.75 0 0 1 0 1.5h-3.885l-1.08 5.397a.75.75 0 1 1-1.47-.294l1.02-5.103h-4.47l-1.08 5.397a.75.75 0 0 1-1.47-.294l1.02-5.103H3.75a.75.75 0 1 1 0-1.5h3.885l1.2-6H5.25a.75.75 0 0 1 0-1.5h3.885l1.08-5.397a.75.75 0 0 1 .882-.588ZM10.365 9l-1.2 6h4.47l1.2-6h-4.47Z"
-                  clip-rule="evenodd"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M11.097 1.515a.75.75 0 0 1 .589.882L10.666 7.5h4.47l1.079-5.397a.75.75 0 1 1 1.47.294L16.665 7.5h3.585a.75.75 0 0 1 0 1.5h-3.885l-1.2 6h3.585a.75.75 0 0 1 0 1.5h-3.885l-1.08 5.397a.75.75 0 1 1-1.47-.294l1.02-5.103h-4.47l-1.08 5.397a.75.75 0 0 1-1.47-.294l1.02-5.103H3.75a.75.75 0 1 1 0-1.5h3.885l1.2-6H5.25a.75.75 0 0 1 0-1.5h3.885l1.08-5.397a.75.75 0 0 1 .882-.588ZM10.365 9l-1.2 6h4.47l1.2-6h-4.47Z" clip-rule="evenodd" />
               </svg>
             </div>
           </div>
@@ -509,20 +489,13 @@
             <label for="mensagem">Sua Mensagem</label>
             <textarea
               id="mensagem"
+              name="mensagem"
               placeholder="Descreva detalhadamente como podemos te ajudar..."
               required
             ></textarea>
             <div class="input-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12 2.25c-2.429 0-4.817.178-7.152.521C2.87 3.061 1.5 4.795 1.5 6.741v6.018c0 1.946 1.37 3.68 3.348 3.97.877.129 1.761.234 2.652.316V21a.75.75 0 0 0 1.28.53l4.184-4.183a.39.39 0 0 1 .266-.112c2.006-.05 3.982-.22 5.922-.506 1.978-.29 3.348-2.023 3.348-3.97V6.741c0-1.947-1.37-3.68-3.348-3.97A49.145 49.145 0 0 0 12 2.25ZM8.25 8.625a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Zm2.625 1.125a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
-                  clip-rule="evenodd"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M12 2.25c-2.429 0-4.817.178-7.152.521C2.87 3.061 1.5 4.795 1.5 6.741v6.018c0 1.946 1.37 3.68 3.348 3.97.877.129 1.761.234 2.652.316V21a.75.75 0 0 0 1.28.53l4.184-4.183a.39.39 0 0 1 .266-.112c2.006-.05 3.982-.22 5.922-.506 1.978-.29 3.348-2.023 3.348-3.97V6.741c0-1.947-1.37-3.68-3.348-3.97A49.145 49.145 0 0 0 12 2.25ZM8.25 8.625a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Zm2.625 1.125a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z" clip-rule="evenodd" />
               </svg>
             </div>
           </div>
@@ -530,18 +503,13 @@
           <div class="form-actions">
             <button type="submit" class="btn-suporte">
               <span>Enviar Mensagem</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
               </svg>
             </button>
           </div>
         </form>
+
 
         <div class="suporte-info" data-aos="flip-up">
           <div class="info-card">
@@ -558,10 +526,10 @@
                 />
               </svg>
             </div>
-            <h3>Suporte Rápido</h3>
-            <p>
-              Nosso tempo médio de resposta é de <strong>2 horas úteis</strong>.
-            </p>
+            <h3>Quer integrar o Pix-za ao seu negócio?</h3>
+              <p>
+              Estamos prontos para ajudar na adaptação da nossa solução às necessidades da sua empresa. Entre em contato e leve o Pix-za para o seu negócio.
+              </p>
           </div>
 
           <div class="info-card" data-aos="flip-up">
@@ -580,7 +548,7 @@
             </div>
             <h3>Guia Completo</h3>
             <p>
-              Explore nossos <a href="#">artigos e tutoriais</a> para aprender
+              Explore nossos <a href="#demonstracao">artigos e tutoriais</a> para aprender
               mais sobre como utilizar nossa plataforma.
             </p>
           </div>
