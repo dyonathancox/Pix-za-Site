@@ -955,7 +955,7 @@ footer a {
 /* ============ RESPONSIVIDADE ============ */
 
 /*390px até 767px (Telefones grandes / pequenos tablets) */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 210px) and (max-width: 767px) {
   /* Header */
   header {
     display: grid;
