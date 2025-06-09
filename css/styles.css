@@ -1144,7 +1144,7 @@ footer a {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    padding: 1rem;
+    padding: .4rem 1rem ;
     flex-direction: column;
   }
 
