@@ -71,7 +71,7 @@ header {
 
 header .logo{
   img{
-    width: 200px;
+    width: 150px;
     height: auto;
   }
 }
@@ -952,7 +952,7 @@ footer a {
   font-weight: bold;
 }
 
-/* ============ RESPONSIVIDADE ============ */
+/*  RESPONSIVIDADE  */
 
 /*390px até 767px (Telefones grandes / pequenos tablets) */
 @media (min-width: 210px) and (max-width: 767px) {
@@ -1141,14 +1141,49 @@ footer a {
 @media (min-width: 768px) and (max-width: 1200px) {
   /* Header */
   header {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
     padding: 1rem;
+    flex-direction: column;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    grid-column: 1 / -1;
   }
 
   .nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 0;
     margin-top: 1rem;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 0.5rem 0;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-login {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
   }
 
   /* Hero Section */
